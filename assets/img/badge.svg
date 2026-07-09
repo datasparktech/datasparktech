@@ -1,0 +1,37 @@
+<svg viewBox="10 20 210 210" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1B1035"/>
+      <stop offset="55%" stop-color="#4A2A9E"/>
+      <stop offset="100%" stop-color="#00C2D1"/>
+    </linearGradient>
+    <linearGradient id="monoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#9FF3FF"/>
+    </linearGradient>
+    <linearGradient id="glossOverlay" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.35"/>
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="badgeClip"><rect x="20" y="30" width="190" height="190" rx="34"/></clipPath>
+  </defs>
+  <g clip-path="url(#badgeClip)">
+    <rect x="20" y="30" width="190" height="190" fill="url(#badgeGrad)"/>
+    <ellipse cx="115" cy="60" rx="130" ry="70" fill="url(#glossOverlay)"/>
+    <polygon points="20,30 90,30 40,220 20,220" fill="#FFFFFF" opacity="0.06"/>
+  </g>
+  <rect x="20" y="30" width="190" height="190" rx="34" fill="none" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1.5"/>
+  <g filter="url(#softGlow)">
+    <path d="M 52 76 L 52 174 L 90 174 C 122 174 142 152 142 125 C 142 98 122 76 90 76 Z
+             M 74 96 L 88 96 C 106 96 118 108 118 125 C 118 142 106 154 88 154 L 74 154 Z" fill="url(#monoGrad)"/>
+    <path d="M 178 92 C 176 76 162 66 142 66 C 120 66 106 78 106 96 C 106 112 118 119 140 124
+             C 156 128 163 132 163 141 C 163 150 154 157 140 157 C 124 157 113 150 111 136
+             L 92 140 C 95 164 116 178 140 178 C 166 178 184 165 184 143 C 184 125 170 116 148 111
+             C 133 108 128 104 128 97 C 128 90 134 85 143 85 C 154 85 160 90 162 99 Z" fill="url(#monoGrad)"/>
+  </g>
+</svg>
