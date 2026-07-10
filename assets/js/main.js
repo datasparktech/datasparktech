@@ -33,6 +33,22 @@ const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
   });
 })();
 
+// ---------- FAQ accordion ----------
+(function(){
+  var items = document.querySelectorAll('.faq-item');
+  if(!items.length) return;
+  items.forEach(function(item){
+    var q = item.querySelector('.faq-q');
+    q.addEventListener('click', function(){
+      var wasOpen = item.classList.contains('open');
+      items.forEach(function(i){ i.classList.remove('open'); });
+      if(!wasOpen){ item.classList.add('open'); }
+    });
+  });
+  // Open the first item by default
+  items[0].classList.add('open');
+})();
+
 // ---------- Tabbed service explorer ----------
 (function(){
   var tabs = document.querySelectorAll('.explorer-tab');
