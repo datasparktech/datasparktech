@@ -90,7 +90,8 @@ nav{
   display:flex;
   align-items:center;
   justify-content:space-between;
-  padding:16px 32px;
+  height:72px;
+  padding:0 32px;
   max-width:1180px;
   margin:0 auto;
   position:relative;
@@ -170,7 +171,7 @@ nav{
 .mobile-menu{
   display:none;
   position:fixed;
-  top:70px; left:0; right:0; bottom:0;
+  top:73px; left:0; right:0; bottom:0;
   z-index:99;
   background:var(--white);
   padding:28px 32px;
