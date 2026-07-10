@@ -1,0 +1,68 @@
+<svg viewBox="0 0 520 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="hvGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5B2EC9"/>
+      <stop offset="100%" stop-color="#00C2D1"/>
+    </linearGradient>
+    <linearGradient id="hvGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B1F87"/>
+      <stop offset="100%" stop-color="#5B2EC9"/>
+    </linearGradient>
+    <filter id="hvShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#3B1F87" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- floating dashboard card -->
+  <g filter="url(#hvShadow)">
+    <rect x="60" y="70" width="360" height="260" rx="20" fill="#FFFFFF" stroke="#E4E0F2" stroke-width="1.5"/>
+  </g>
+  <!-- card header -->
+  <circle cx="88" cy="98" r="5" fill="#E4E0F2"/>
+  <circle cx="106" cy="98" r="5" fill="#E4E0F2"/>
+  <circle cx="124" cy="98" r="5" fill="#E4E0F2"/>
+  <rect x="330" y="90" width="70" height="16" rx="8" fill="url(#hvGrad1)" opacity="0.15"/>
+
+  <!-- bar chart -->
+  <rect x="88" y="220" width="26" height="70" rx="4" fill="#E4E0F2"/>
+  <rect x="126" y="190" width="26" height="100" rx="4" fill="url(#hvGrad1)"/>
+  <rect x="164" y="240" width="26" height="50" rx="4" fill="#E4E0F2"/>
+  <rect x="202" y="160" width="26" height="130" rx="4" fill="url(#hvGrad1)"/>
+  <rect x="240" y="205" width="26" height="85" rx="4" fill="#E4E0F2"/>
+
+  <!-- line chart overlay -->
+  <polyline points="290,260 320,220 350,235 380,180" fill="none" stroke="url(#hvGrad1)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="380" cy="180" r="6" fill="#00C2D1"/>
+
+  <!-- small stat pill on card -->
+  <rect x="88" y="130" width="120" height="34" rx="10" fill="#F7F6FB"/>
+  <text x="100" y="152" font-family="monospace" font-size="12" fill="#5B2EC9" font-weight="700">+62% EFFICIENCY</text>
+
+  <!-- floating secondary card: AI chip -->
+  <g filter="url(#hvShadow)">
+    <rect x="300" y="300" width="170" height="90" rx="16" fill="url(#hvGrad2)"/>
+  </g>
+  <circle cx="330" cy="330" r="14" fill="#FFFFFF" opacity="0.15"/>
+  <path d="M 322 330 L 328 336 L 340 322" stroke="#00C2D1" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="352" y="326" font-family="Arial, sans-serif" font-size="13" fill="#FFFFFF" font-weight="700">AI-Assisted</text>
+  <text x="352" y="344" font-family="Arial, sans-serif" font-size="11" fill="#C9B8F2">Automation live</text>
+  <rect x="322" y="358" width="128" height="6" rx="3" fill="#FFFFFF" opacity="0.12"/>
+  <rect x="322" y="358" width="86" height="6" rx="3" fill="#00C2D1"/>
+
+  <!-- floating badge circle -->
+  <g filter="url(#hvShadow)">
+    <circle cx="90" cy="360" r="46" fill="#FFFFFF" stroke="#E4E0F2" stroke-width="1.5"/>
+  </g>
+  <path d="M 74 360 L 84 370 L 106 346" stroke="url(#hvGrad1)" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- connecting dotted lines (data flow motif) -->
+  <path d="M 136 360 L 300 345" stroke="#C9B8F2" stroke-width="2" stroke-dasharray="2 6" stroke-linecap="round"/>
+  <path d="M 420 200 L 470 150" stroke="#9FF3FF" stroke-width="2" stroke-dasharray="2 6" stroke-linecap="round"/>
+
+  <!-- decorative dots -->
+  <circle cx="470" cy="150" r="5" fill="#00C2D1"/>
+  <circle cx="470" cy="150" r="10" fill="#00C2D1" opacity="0.2"/>
+  <circle cx="40" cy="60" r="4" fill="#5B2EC9" opacity="0.4"/>
+  <circle cx="480" cy="420" r="4" fill="#5B2EC9" opacity="0.4"/>
+  <circle cx="30" cy="420" r="3" fill="#00C2D1" opacity="0.5"/>
+</svg>

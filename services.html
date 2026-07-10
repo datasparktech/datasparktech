@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Services — DataSpark Tech LLC</title>
-<meta name="description" content="Workflow automation, CRM/portal development, API integrations, QA/testing, cloud migration, maintenance & support, mobile app development, and data analytics/dashboarding.">
+<meta name="description" content="Custom software, cloud, automation, and AI services from DataSpark Tech LLC — workflow automation, CRM/portal development, API integrations, QA/testing, cloud migration, maintenance & support, mobile apps, data analytics, and AI/LLM integration.">
 <link rel="icon" type="image/png" href="assets/img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,93 +52,136 @@
   <div class="wrap">
     <span class="eyebrow">SERVICES</span>
     <h1>Everything your software needs, from first line of code to year-three maintenance.</h1>
-    <p>Eight services, one team. No handoffs between a "build" vendor and a "support" vendor.</p>
+    <p>10 services, one team, organized by what stage your project is at. No handoffs between a "build" vendor, an "AI" vendor, and a "support" vendor.</p>
   </div>
 </div>
 
-<section class="section services" style="background:var(--white);">
+<section class="section explorer" style="background:var(--white);">
   <div class="wrap">
-    <div class="service-detail-grid">
+    <div class="explorer-tabs">
+      <button class="explorer-tab active" data-tab="build">Build</button>
+<button class="explorer-tab" data-tab="operate">Operate</button>
+<button class="explorer-tab" data-tab="optimize">Optimize</button>
+<button class="explorer-tab" data-tab="ai">AI &amp; Innovation</button>
+
+    </div>
+    <div class="explorer-panels">
       
-      <div class="service-detail-card">
-        <div class="num">01</div>
-        <h3>Workflow automation</h3>
-        <p>Replace manual, repetitive steps with automated pipelines that just run in the background.</p>
-        <ul>
-          <li>Approval chains, notifications, and data sync automated end to end</li>
-          <li>Triggers built on the tools you already use (email, spreadsheets, CRMs)</li>
-          <li>Fewer copy-paste steps, fewer dropped tasks</li>
-        </ul>
+      <div class="explorer-panel active" data-panel="build">
+        <div class="explorer-grid">
+        <div class="service-detail-card">
+          <span class="group-tag tag-build" style="margin-bottom:16px;">BUILD</span>
+          <h3>CRM/portal development</h3>
+          <p>Customer and partner portals tailored to your process, not bent to fit a generic template.</p>
+          <ul>
+            <li>Custom login, permissions, and role-based views</li>
+            <li>Built to match your actual sales or service workflow</li>
+            <li>Integrates with your existing CRM or replaces it outright</li>
+          </ul>
+        </div>
+        <div class="service-detail-card">
+          <span class="group-tag tag-build" style="margin-bottom:16px;">BUILD</span>
+          <h3>API integrations</h3>
+          <p>Connect the tools you already use so data moves on its own, without manual re-entry.</p>
+          <ul>
+            <li>Two-way sync between CRMs, ERPs, payment platforms, and internal tools</li>
+            <li>REST/GraphQL API design and integration</li>
+            <li>Webhooks and event-driven pipelines</li>
+          </ul>
+        </div>
+        <div class="service-detail-card">
+          <span class="group-tag tag-build" style="margin-bottom:16px;">BUILD</span>
+          <h3>Mobile app development</h3>
+          <p>Native and cross-platform apps for iOS and Android, built for real usage, not just a demo.</p>
+          <ul>
+            <li>React Native and native iOS/Android builds</li>
+            <li>App Store and Play Store submission support</li>
+            <li>Ongoing updates as OS versions change</li>
+          </ul>
+        </div>
+        </div>
       </div>
-      <div class="service-detail-card">
-        <div class="num">02</div>
-        <h3>CRM/portal development</h3>
-        <p>Customer and partner portals tailored to your process, not bent to fit a generic template.</p>
-        <ul>
-          <li>Custom login, permissions, and role-based views</li>
-          <li>Built to match your actual sales or service workflow</li>
-          <li>Integrates with your existing CRM or replaces it outright</li>
-        </ul>
+      <div class="explorer-panel" data-panel="operate">
+        <div class="explorer-grid">
+        <div class="service-detail-card">
+          <span class="group-tag tag-operate" style="margin-bottom:16px;">OPERATE</span>
+          <h3>Cloud setup &amp; migration</h3>
+          <p>Move to AWS, Azure, or GCP &mdash; or between them &mdash; without downtime surprises.</p>
+          <ul>
+            <li>Infrastructure setup, IAM, and cost review</li>
+            <li>Zero/low-downtime migration planning</li>
+            <li>Post-migration monitoring and tuning</li>
+          </ul>
+        </div>
+        <div class="service-detail-card">
+          <span class="group-tag tag-operate" style="margin-bottom:16px;">OPERATE</span>
+          <h3>Maintenance &amp; support</h3>
+          <p>Ongoing fixes, updates, and monitoring after launch, from people who know the codebase.</p>
+          <ul>
+            <li>Bug fixes and dependency/security updates</li>
+            <li>Uptime monitoring and alerting</li>
+            <li>Direct line to the engineer who built it</li>
+          </ul>
+        </div>
+        <div class="service-detail-card">
+          <span class="group-tag tag-operate" style="margin-bottom:16px;">OPERATE</span>
+          <h3>QA/testing</h3>
+          <p>Structured test coverage so new releases don't quietly break what already works.</p>
+          <ul>
+            <li>Manual and automated test suites</li>
+            <li>Regression testing before every release</li>
+            <li>Bug triage and reporting your team can actually act on</li>
+          </ul>
+        </div>
+        </div>
       </div>
-      <div class="service-detail-card">
-        <div class="num">03</div>
-        <h3>API integrations</h3>
-        <p>Connect the tools you already use so data moves on its own, without manual re-entry.</p>
-        <ul>
-          <li>Two-way sync between CRMs, ERPs, payment platforms, and internal tools</li>
-          <li>REST/GraphQL API design and integration</li>
-          <li>Webhooks and event-driven pipelines</li>
-        </ul>
+      <div class="explorer-panel" data-panel="optimize">
+        <div class="explorer-grid">
+        <div class="service-detail-card">
+          <span class="group-tag tag-optimize" style="margin-bottom:16px;">OPTIMIZE</span>
+          <h3>Workflow automation</h3>
+          <p>Replace manual, repetitive steps with automated pipelines that just run in the background.</p>
+          <ul>
+            <li>Approval chains, notifications, and data sync automated end to end</li>
+            <li>Triggers built on the tools you already use</li>
+            <li>Fewer copy-paste steps, fewer dropped tasks</li>
+          </ul>
+        </div>
+        <div class="service-detail-card">
+          <span class="group-tag tag-optimize" style="margin-bottom:16px;">OPTIMIZE</span>
+          <h3>Data analytics/dashboarding</h3>
+          <p>Turn raw, scattered data into dashboards your team actually opens every day.</p>
+          <ul>
+            <li>Data pipelines from your existing systems</li>
+            <li>Dashboards built around the decisions you need to make</li>
+            <li>Scheduled reports, not one-off exports</li>
+          </ul>
+        </div>
+        </div>
       </div>
-      <div class="service-detail-card">
-        <div class="num">04</div>
-        <h3>QA/testing</h3>
-        <p>Structured test coverage so new releases don't quietly break what already works.</p>
-        <ul>
-          <li>Manual and automated test suites</li>
-          <li>Regression testing before every release</li>
-          <li>Bug triage and reporting your team can actually act on</li>
-        </ul>
-      </div>
-      <div class="service-detail-card">
-        <div class="num">05</div>
-        <h3>Cloud setup &amp; migration</h3>
-        <p>Move to AWS, Azure, or GCP &mdash; or between them &mdash; without downtime surprises.</p>
-        <ul>
-          <li>Infrastructure setup, IAM, and cost review</li>
-          <li>Zero/low-downtime migration planning</li>
-          <li>Post-migration monitoring and tuning</li>
-        </ul>
-      </div>
-      <div class="service-detail-card">
-        <div class="num">06</div>
-        <h3>Maintenance &amp; support</h3>
-        <p>Ongoing fixes, updates, and monitoring after launch, from people who know the codebase.</p>
-        <ul>
-          <li>Bug fixes and dependency/security updates</li>
-          <li>Uptime monitoring and alerting</li>
-          <li>Direct line to the engineer who built it</li>
-        </ul>
-      </div>
-      <div class="service-detail-card">
-        <div class="num">07</div>
-        <h3>Mobile app development</h3>
-        <p>Native and cross-platform apps for iOS and Android, built for real usage, not just a demo.</p>
-        <ul>
-          <li>React Native and native iOS/Android builds</li>
-          <li>App Store and Play Store submission support</li>
-          <li>Ongoing updates as OS versions change</li>
-        </ul>
-      </div>
-      <div class="service-detail-card">
-        <div class="num">08</div>
-        <h3>Data analytics/dashboarding</h3>
-        <p>Turn raw, scattered data into dashboards your team actually opens every day.</p>
-        <ul>
-          <li>Data pipelines from your existing systems</li>
-          <li>Dashboards built around the decisions you need to make</li>
-          <li>Scheduled reports, not one-off exports</li>
-        </ul>
+      <div class="explorer-panel" data-panel="ai">
+        <div class="explorer-grid">
+        <div class="service-detail-card">
+          <span class="group-tag tag-ai" style="margin-bottom:16px;">AI &AMP; INNOVATION</span>
+          <h3>AI &amp; machine learning solutions</h3>
+          <p>Custom models and predictive features built directly into your product or internal tools.</p>
+          <ul>
+            <li>Predictive analytics and forecasting models</li>
+            <li>AI features embedded into existing applications</li>
+            <li>Model evaluation grounded in your actual data</li>
+          </ul>
+        </div>
+        <div class="service-detail-card">
+          <span class="group-tag tag-ai" style="margin-bottom:16px;">AI &AMP; INNOVATION</span>
+          <h3>Generative AI &amp; LLM integration</h3>
+          <p>AI copilots, chatbots, and document or content automation using modern language models.</p>
+          <ul>
+            <li>Custom chatbots and AI assistants for your product or team</li>
+            <li>Document summarization and content automation</li>
+            <li>LLM integration into existing workflows and portals</li>
+          </ul>
+        </div>
+        </div>
       </div>
     </div>
   </div>

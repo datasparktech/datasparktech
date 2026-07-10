@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apply — DataSpark Tech LLC Careers</title>
+<meta name="description" content="Apply to join DataSpark Tech LLC's distributed engineering team across the US and India.">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <nav>
+    <a href="index.html" class="logo-lockup">
+      <img class="badge" src="assets/img/badge.svg" alt="DataSpark Tech LLC">
+      <span class="logo-text">
+        <span class="word">Data<span>Spark</span></span>
+        <span class="sub">TECH LLC</span>
+      </span>
+    </a>
+    <div class="nav-links">
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="careers.html" class="active">Careers</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-primary">Start a project</a>
+    </div>
+    <button class="nav-toggle" aria-label="Open menu"><span></span></button>
+  </nav>
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="about.html">About</a>
+    <a href="careers.html" class="active">Careers</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn-primary btn-block">Start a project</a>
+  </div>
+</header>
+
+<main>
+
+<div class="page-header">
+  <div class="wrap">
+    <span class="eyebrow">CAREERS &middot; APPLY</span>
+    <h1>Apply to join the team.</h1>
+    <p>Tell us a bit about yourself and attach your resume &mdash; it goes straight to our hiring team.</p>
+  </div>
+</div>
+
+<section class="contact section" style="background:var(--paper); color:var(--ink);">
+  <div class="wrap" style="max-width:720px; margin:0 auto; padding:0 32px;">
+
+    <form id="applyForm">
+      <input type="hidden" name="subject" value="New job application from datasparktech.com">
+      <input type="hidden" name="from_name" value="DataSpark Tech Careers Page">
+      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+      <div class="form-row">
+        <div>
+          <label for="applyName">FULL NAME</label>
+          <input type="text" id="applyName" name="Name" required>
+        </div>
+        <div>
+          <label for="applyEmail">EMAIL</label>
+          <input type="email" id="applyEmail" name="Email" required>
+        </div>
+      </div>
+
+      <div class="form-row" style="margin-top:16px;">
+        <div>
+          <label for="applyPhone">PHONE</label>
+          <input type="tel" id="applyPhone" name="Phone" required>
+        </div>
+        <div>
+          <label for="applyLinkedin">LINKEDIN PROFILE URL</label>
+          <input type="url" id="applyLinkedin" name="LinkedIn" placeholder="https://linkedin.com/in/yourname" required>
+        </div>
+      </div>
+
+      <div style="margin-top:16px;">
+        <label for="applyRole">POSITION YOU'RE APPLYING FOR</label>
+        <select id="applyRole" name="Position">
+          <option value="">Select a role</option>
+          <option>Full-Stack Software Engineer</option>
+          <option>QA / Test Engineer</option>
+          <option>Cloud / DevOps Engineer</option>
+          <option>Mobile Engineer (iOS/Android)</option>
+          <option>AI / ML Engineer</option>
+          <option>Other / Not listed</option>
+        </select>
+      </div>
+
+      <div style="margin-top:16px;">
+        <label for="applyResume">RESUME</label>
+        <div class="file-drop" id="resumeDrop">
+          <input type="file" id="applyResume" name="attachment" accept=".pdf,.doc,.docx">
+          <div class="fd-label"><strong>Click to upload</strong> or drag and drop your resume</div>
+          <span class="fd-hint">PDF or Word, up to 5MB</span>
+          <div class="fd-filename"></div>
+        </div>
+      </div>
+
+      <div style="margin-top:16px;">
+        <label for="applyNote">ANYTHING ELSE YOU'D LIKE US TO KNOW? (OPTIONAL)</label>
+        <textarea id="applyNote" name="Note" placeholder="Portfolio links, availability, what you'd want to work on..."></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block" style="margin-top:20px;">Send application</button>
+      <div class="form-status" id="applyFormStatus"></div>
+      <p class="form-note" style="color:var(--muted);">Sent directly to hr@datasparktech.com &mdash; no email client required.</p>
+    </form>
+
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <a href="index.html" class="logo-lockup">
+        <img class="badge" src="assets/img/badge.svg" alt="DataSpark Tech LLC">
+        <span class="logo-text">
+          <span class="word">Data<span>Spark</span></span>
+          <span class="sub">TECH LLC</span>
+        </span>
+      </a>
+      <div class="footer-links">
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="careers.html">Careers</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 DataSpark Tech LLC. All rights reserved.</span>
+      <span>datasparktech.com &middot; Innovation Through Data</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

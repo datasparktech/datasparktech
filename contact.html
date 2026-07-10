@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact — DataSpark Tech LLC</title>
-<meta name="description" content="Get in touch with DataSpark Tech LLC to start a custom software, automation, or IT services project.">
+<meta name="description" content="Get in touch with DataSpark Tech LLC to start a custom software, automation, AI, or IT services project.">
 <link rel="icon" type="image/png" href="assets/img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,34 +71,41 @@
         <span class="value">Dallas, TX</span>
       </div>
       <div class="contact-info-item">
-        <span class="label">TEAM</span>
-        <span class="value">10 people &middot; US &amp; India</span>
-      </div>
-      <div class="contact-info-item">
         <span class="label">WEB</span>
         <span class="value">datasparktech.com</span>
       </div>
     </div>
 
     <form class="quote-form" id="quoteForm">
+      <input type="hidden" name="subject" value="New project inquiry from datasparktech.com">
+      <input type="hidden" name="from_name" value="DataSpark Tech Website">
+      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
       <div class="form-row">
         <div>
           <label for="name">NAME</label>
-          <input type="text" id="name" required>
+          <input type="text" id="name" name="Name" required>
         </div>
         <div>
           <label for="email">EMAIL</label>
-          <input type="email" id="email" required>
+          <input type="email" id="email" name="Email" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div>
+          <label for="company">COMPANY (OPTIONAL)</label>
+          <input type="text" id="company" name="Company">
+        </div>
+        <div>
+          <label for="phone">PHONE (OPTIONAL)</label>
+          <input type="tel" id="phone" name="Phone">
         </div>
       </div>
       <div>
-        <label for="company">COMPANY (OPTIONAL)</label>
-        <input type="text" id="company">
-      </div>
-      <div>
         <label for="service">SERVICE OF INTEREST</label>
-        <select id="service">
+        <select id="service" name="Service of interest">
           <option value="">Not sure yet</option>
+          <option>Custom software development</option>
           <option>Workflow automation</option>
           <option>CRM/portal development</option>
           <option>API integrations</option>
@@ -107,14 +114,40 @@
           <option>Maintenance &amp; support</option>
           <option>Mobile app development</option>
           <option>Data analytics/dashboarding</option>
+          <option>AI &amp; machine learning solutions</option>
+          <option>Generative AI &amp; LLM integration</option>
         </select>
+      </div>
+      <div class="form-row">
+        <div>
+          <label for="budget">ESTIMATED BUDGET (OPTIONAL)</label>
+          <select id="budget" name="Budget range">
+            <option value="">Prefer not to say</option>
+            <option>Under $5,000</option>
+            <option>$5,000 &ndash; $15,000</option>
+            <option>$15,000 &ndash; $50,000</option>
+            <option>$50,000+</option>
+            <option>Ongoing retainer</option>
+          </select>
+        </div>
+        <div>
+          <label for="timeline">TIMELINE (OPTIONAL)</label>
+          <select id="timeline" name="Timeline">
+            <option value="">Not sure yet</option>
+            <option>As soon as possible</option>
+            <option>Within 1&ndash;3 months</option>
+            <option>3&ndash;6 months</option>
+            <option>Just exploring options</option>
+          </select>
+        </div>
       </div>
       <div>
         <label for="details">WHAT DO YOU NEED HELP WITH?</label>
-        <textarea id="details" required></textarea>
+        <textarea id="details" name="Project details" placeholder="What's the problem you're trying to solve? What systems or tools are involved today?" required></textarea>
       </div>
       <button type="submit" class="btn btn-primary btn-block">Send project details</button>
-      <p class="form-note">Opens your email client with these details prefilled &mdash; nothing is sent from this page directly.</p>
+      <div class="form-status" id="quoteFormStatus"></div>
+      <p class="form-note">Sent directly to connect@datasparktech.com &mdash; no email client required.</p>
     </form>
   </div>
 </section>
