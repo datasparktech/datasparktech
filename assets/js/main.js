@@ -5,8 +5,8 @@
 // you need one key created with connect@datasparktech.com, and a
 // separate key created with hr@datasparktech.com.
 // ============================================================
-const WEB3FORMS_KEY_PROJECTS = "YOUR_WEB3FORMS_ACCESS_KEY_FOR_CONNECT@DATASPARKTECH.COM";
-const WEB3FORMS_KEY_CAREERS = "YOUR_WEB3FORMS_ACCESS_KEY_FOR_HR@DATASPARKTECH.COM";
+const WEB3FORMS_KEY_PROJECTS = "868d6347-a0a5-45f8-a19e-3476fab764f1";
+const WEB3FORMS_KEY_CAREERS = "11b3764b-a92b-47b3-8d81-4fb880c27820";
 const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
 
 // ---------- Mobile nav toggle ----------
