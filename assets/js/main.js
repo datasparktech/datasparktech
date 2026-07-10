@@ -33,6 +33,34 @@ const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
   });
 })();
 
+// ---------- FAQ sidebar nav (smooth scroll + scroll-spy) ----------
+(function(){
+  var sidebarLinks = document.querySelectorAll('.faq-sidebar a');
+  var cards = document.querySelectorAll('.faq-card');
+  if(!sidebarLinks.length || !cards.length) return;
+
+  sidebarLinks.forEach(function(link){
+    link.addEventListener('click', function(e){
+      e.preventDefault();
+      var target = document.querySelector(link.getAttribute('href'));
+      if(target){ target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    });
+  });
+
+  var observer = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        var id = entry.target.getAttribute('id');
+        sidebarLinks.forEach(function(link){
+          link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+        });
+      }
+    });
+  }, { rootMargin: '-100px 0px -60% 0px', threshold: 0 });
+
+  cards.forEach(function(card){ observer.observe(card); });
+})();
+
 // ---------- FAQ accordion ----------
 (function(){
   var items = document.querySelectorAll('.faq-item');
