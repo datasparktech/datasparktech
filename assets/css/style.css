@@ -497,7 +497,70 @@ nav{
 .form-status.error{ background:rgba(220,60,60,.08); color:#c23b3b; }
 .btn[disabled]{ opacity:.6; cursor:not-allowed; transform:none !important; }
 
-/* ---------- Why-us / feature rows ---------- */
+/* ---------- Reusable icon badge ---------- */
+.icon-badge{
+  width:46px; height:46px;
+  border-radius:12px;
+  background:linear-gradient(135deg, var(--violet), var(--cyan));
+  display:flex; align-items:center; justify-content:center;
+  flex-shrink:0;
+}
+.icon-badge svg{ width:22px; height:22px; }
+.icon-badge.sm{ width:34px; height:34px; border-radius:9px; }
+.icon-badge.sm svg{ width:16px; height:16px; }
+
+.service-item{ display:flex; gap:14px; }
+.service-item .icon-badge{ margin-top:2px; }
+.service-item-body{ flex:1; }
+
+.service-detail-card .icon-badge{ margin-bottom:18px; }
+
+/* ---------- Case card visual header ---------- */
+.case-visual{
+  height:120px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  overflow:hidden;
+}
+.case-visual svg{ width:52px; height:52px; position:relative; z-index:1; }
+.case-visual::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(160px 90px at 15% 0%, rgba(255,255,255,.16), transparent 60%),
+    radial-gradient(160px 90px at 90% 100%, rgba(255,255,255,.12), transparent 60%);
+}
+.case-visual.cv-1{ background:linear-gradient(120deg, #5B2EC9, #7B4FE0); }
+.case-visual.cv-2{ background:linear-gradient(120deg, #00A9B7, #00C2D1); }
+.case-visual.cv-3{ background:linear-gradient(120deg, #3B1F87, #5B2EC9); }
+.case-visual.cv-4{ background:linear-gradient(120deg, #1B1035, #3B1F87); }
+.case-visual.cv-5{ background:linear-gradient(120deg, #5B2EC9, #00C2D1); }
+
+/* ---------- Process step icon ---------- */
+.step-icon{
+  width:48px; height:48px;
+  border-radius:14px;
+  background:var(--white);
+  border:1.5px solid var(--paper-line);
+  display:flex; align-items:center; justify-content:center;
+  margin-bottom:18px;
+  position:relative;
+}
+.step-icon svg{ width:22px; height:22px; }
+.step-icon .step-num-tag{
+  position:absolute;
+  top:-8px; right:-8px;
+  width:22px; height:22px;
+  border-radius:50%;
+  background:linear-gradient(135deg, var(--violet), var(--cyan));
+  color:var(--white);
+  font-family:var(--mono);
+  font-size:10px;
+  display:flex; align-items:center; justify-content:center;
+}
 .feature-row{
   display:grid;
   grid-template-columns:repeat(3, 1fr);
