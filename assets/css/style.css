@@ -261,29 +261,40 @@ nav{
   border-top:1px solid var(--paper-line);
   padding-top:36px;
 }
-.pulse-svg{ width:100%; height:auto; }
-.pulse-path{
+.network-svg{ width:100%; height:auto; display:block; }
+.net-edge{
+  stroke:var(--paper-line);
+  stroke-width:1.2;
   fill:none;
-  stroke:url(#pulseGrad);
-  stroke-width:2.5;
-  stroke-linecap:round;
-  stroke-linejoin:round;
-  stroke-dasharray:1800;
-  stroke-dashoffset:1800;
-  animation:draw 2.4s cubic-bezier(.4,.1,.2,1) .3s forwards;
+  transition:stroke .25s ease, stroke-width .25s ease, opacity .25s ease;
 }
-@keyframes draw{ to{ stroke-dashoffset:0; } }
-.pulse-dot{
+.net-edge.active{
+  stroke:url(#netLineGrad);
+  stroke-width:2;
+}
+.net-node{
+  fill:url(#netNodeGrad);
+  stroke:var(--white);
+  stroke-width:1.5;
+  animation:netPulse 2.6s ease-in-out infinite;
+  cursor:pointer;
+  transition:r .2s ease;
+}
+.net-node-io{
   fill:var(--violet);
-  opacity:0;
-  animation:dotfade .6s ease 1.9s forwards, dotpulse 2.2s ease 2.5s infinite;
 }
-@keyframes dotfade{ to{ opacity:1; } }
-@keyframes dotpulse{
-  0%,100%{ r:5; opacity:1; }
-  50%{ r:8; opacity:.6; }
+.net-node.active, .net-node-io.active{
+  r:9;
 }
-.pulse-labels{
+@keyframes netPulse{
+  0%,100%{ opacity:.75; }
+  50%{ opacity:1; }
+}
+.net-pulse-dot{
+  fill:#9FF3FF;
+  filter:drop-shadow(0 0 3px #00C2D1);
+}
+.network-labels{
   display:flex;
   justify-content:space-between;
   margin-top:14px;
@@ -292,10 +303,9 @@ nav{
   letter-spacing:1px;
   color:var(--muted);
 }
-
 @media (prefers-reduced-motion: reduce){
-  .pulse-path{ animation:none; stroke-dashoffset:0; }
-  .pulse-dot{ animation:none; opacity:1; }
+  .net-node{ animation:none; }
+  .net-pulse-dot{ display:none; }
 }
 
 /* ---------- Page header (interior pages) ---------- */
@@ -497,6 +507,46 @@ nav{
 .form-status.success{ background:rgba(0,194,209,.1); color:#00767e; }
 .form-status.error{ background:rgba(220,60,60,.08); color:#c23b3b; }
 .btn[disabled]{ opacity:.6; cursor:not-allowed; transform:none !important; }
+
+/* ---------- Comparison table ---------- */
+.compare-table-wrap{
+  overflow-x:auto;
+  border-radius:16px;
+  border:1px solid var(--paper-line);
+  box-shadow:0 1px 2px rgba(13,11,31,.04), 0 14px 32px rgba(13,11,31,.05);
+}
+.compare-table{
+  width:100%;
+  border-collapse:collapse;
+  min-width:640px;
+  background:var(--white);
+}
+.compare-table th{
+  font-family:var(--display);
+  font-size:15px;
+  text-align:left;
+  padding:18px 20px;
+  background:var(--ink);
+  color:var(--white);
+}
+.compare-table th:first-child{ border-radius:16px 0 0 0; }
+.compare-table th:last-child{ border-radius:0 16px 0 0; }
+.compare-table th.featured-col{ background:var(--violet); }
+.compare-table td{
+  padding:16px 20px;
+  font-size:13.5px;
+  color:var(--ink-soft);
+  border-top:1px solid var(--paper-line);
+}
+.compare-table td:first-child{
+  font-weight:600;
+  color:var(--ink);
+  font-family:var(--mono);
+  font-size:12px;
+}
+.compare-table tr:nth-child(even) td{ background:var(--paper); }
+.compare-table td.featured-col{ background:rgba(91,46,201,.04); }
+.compare-table .yes{ color:var(--violet); font-weight:700; }
 
 /* ---------- Reusable icon badge ---------- */
 .icon-badge{

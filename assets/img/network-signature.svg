@@ -1,0 +1,65 @@
+<svg class="network-svg" viewBox="0 0 1160 170" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="netLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#5B2EC9"/>
+    <stop offset="50%" stop-color="#00C2D1"/>
+    <stop offset="100%" stop-color="#00A9B7"/>
+  </linearGradient>
+  <radialGradient id="netNodeGrad">
+    <stop offset="0%" stop-color="#9FF3FF"/>
+    <stop offset="100%" stop-color="#00C2D1"/>
+  </radialGradient>
+</defs>
+<g class="net-edges">
+<line class="net-edge" data-a="0" data-b="2" x1="70" y1="55" x2="420" y2="25"/>
+<line class="net-edge" data-a="0" data-b="3" x1="70" y1="55" x2="420" y2="70"/>
+<line class="net-edge" data-a="0" data-b="4" x1="70" y1="55" x2="420" y2="115"/>
+<line class="net-edge" data-a="0" data-b="5" x1="70" y1="55" x2="420" y2="150"/>
+<line class="net-edge" data-a="1" data-b="2" x1="70" y1="115" x2="420" y2="25"/>
+<line class="net-edge" data-a="1" data-b="3" x1="70" y1="115" x2="420" y2="70"/>
+<line class="net-edge" data-a="1" data-b="4" x1="70" y1="115" x2="420" y2="115"/>
+<line class="net-edge" data-a="1" data-b="5" x1="70" y1="115" x2="420" y2="150"/>
+<line class="net-edge" data-a="2" data-b="6" x1="420" y1="25" x2="760" y2="25"/>
+<line class="net-edge" data-a="2" data-b="7" x1="420" y1="25" x2="760" y2="70"/>
+<line class="net-edge" data-a="2" data-b="8" x1="420" y1="25" x2="760" y2="115"/>
+<line class="net-edge" data-a="2" data-b="9" x1="420" y1="25" x2="760" y2="150"/>
+<line class="net-edge" data-a="3" data-b="6" x1="420" y1="70" x2="760" y2="25"/>
+<line class="net-edge" data-a="3" data-b="7" x1="420" y1="70" x2="760" y2="70"/>
+<line class="net-edge" data-a="3" data-b="8" x1="420" y1="70" x2="760" y2="115"/>
+<line class="net-edge" data-a="3" data-b="9" x1="420" y1="70" x2="760" y2="150"/>
+<line class="net-edge" data-a="4" data-b="6" x1="420" y1="115" x2="760" y2="25"/>
+<line class="net-edge" data-a="4" data-b="7" x1="420" y1="115" x2="760" y2="70"/>
+<line class="net-edge" data-a="4" data-b="8" x1="420" y1="115" x2="760" y2="115"/>
+<line class="net-edge" data-a="4" data-b="9" x1="420" y1="115" x2="760" y2="150"/>
+<line class="net-edge" data-a="5" data-b="6" x1="420" y1="150" x2="760" y2="25"/>
+<line class="net-edge" data-a="5" data-b="7" x1="420" y1="150" x2="760" y2="70"/>
+<line class="net-edge" data-a="5" data-b="8" x1="420" y1="150" x2="760" y2="115"/>
+<line class="net-edge" data-a="5" data-b="9" x1="420" y1="150" x2="760" y2="150"/>
+<line class="net-edge" data-a="6" data-b="10" x1="760" y1="25" x2="1090" y2="85"/>
+<line class="net-edge" data-a="7" data-b="10" x1="760" y1="70" x2="1090" y2="85"/>
+<line class="net-edge" data-a="8" data-b="10" x1="760" y1="115" x2="1090" y2="85"/>
+<line class="net-edge" data-a="9" data-b="10" x1="760" y1="150" x2="1090" y2="85"/>
+</g>
+<g class="net-pulses">
+<circle class="net-pulse-dot" r="3"><animateMotion dur="2.2s" begin="0.0s" repeatCount="indefinite" path="M420,25 L760,115"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="2.2s" begin="0.0s" repeatCount="indefinite"/></circle>
+<circle class="net-pulse-dot" r="3"><animateMotion dur="2.7s" begin="0.35s" repeatCount="indefinite" path="M70,115 L420,25"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="2.7s" begin="0.35s" repeatCount="indefinite"/></circle>
+<circle class="net-pulse-dot" r="3"><animateMotion dur="3.2s" begin="0.7s" repeatCount="indefinite" path="M420,70 L760,25"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="3.2s" begin="0.7s" repeatCount="indefinite"/></circle>
+<circle class="net-pulse-dot" r="3"><animateMotion dur="3.7s" begin="1.0499999999999998s" repeatCount="indefinite" path="M420,150 L760,25"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="3.7s" begin="1.0499999999999998s" repeatCount="indefinite"/></circle>
+<circle class="net-pulse-dot" r="3"><animateMotion dur="2.2s" begin="1.4s" repeatCount="indefinite" path="M70,55 L420,70"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="2.2s" begin="1.4s" repeatCount="indefinite"/></circle>
+<circle class="net-pulse-dot" r="3"><animateMotion dur="2.7s" begin="1.75s" repeatCount="indefinite" path="M70,55 L420,115"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="2.7s" begin="1.75s" repeatCount="indefinite"/></circle>
+<circle class="net-pulse-dot" r="3"><animateMotion dur="3.2s" begin="2.0999999999999996s" repeatCount="indefinite" path="M420,115 L760,70"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="3.2s" begin="2.0999999999999996s" repeatCount="indefinite"/></circle>
+</g>
+<g class="net-nodes">
+<circle class="net-node net-node-io" data-id="0" cx="70" cy="55" r="7" style="animation-delay:0.0s"/>
+<circle class="net-node net-node-io" data-id="1" cx="70" cy="115" r="7" style="animation-delay:0.4s"/>
+<circle class="net-node" data-id="2" cx="420" cy="25" r="5" style="animation-delay:0.8s"/>
+<circle class="net-node" data-id="3" cx="420" cy="70" r="5" style="animation-delay:1.2000000000000002s"/>
+<circle class="net-node" data-id="4" cx="420" cy="115" r="5" style="animation-delay:1.6s"/>
+<circle class="net-node" data-id="5" cx="420" cy="150" r="5" style="animation-delay:0.0s"/>
+<circle class="net-node" data-id="6" cx="760" cy="25" r="5" style="animation-delay:0.4s"/>
+<circle class="net-node" data-id="7" cx="760" cy="70" r="5" style="animation-delay:0.8s"/>
+<circle class="net-node" data-id="8" cx="760" cy="115" r="5" style="animation-delay:1.2000000000000002s"/>
+<circle class="net-node" data-id="9" cx="760" cy="150" r="5" style="animation-delay:1.6s"/>
+<circle class="net-node net-node-io" data-id="10" cx="1090" cy="85" r="7" style="animation-delay:0.0s"/>
+</g>
+</svg>
