@@ -212,3 +212,16 @@ function submitViaWeb3Forms(form, statusEl, accessKey, opts){
     }
   }
 })();
+
+// ---------- Elfsight AI Chatbot ----------
+(function(){
+  var s = document.createElement('script');
+  s.src = 'https://elfsightcdn.com/platform.js';
+  s.async = true;
+  document.body.appendChild(s);
+
+  var w = document.createElement('div');
+  w.className = 'elfsight-app-a4ba7771-9363-4876-a23a-c590c519ccd8';
+  w.setAttribute('data-elfsight-app-lazy', '');
+  document.body.appendChild(w);
+})();
