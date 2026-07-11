@@ -1,65 +1,103 @@
-<svg class="network-svg" viewBox="0 0 1160 170" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-<defs>
-  <linearGradient id="netLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-    <stop offset="0%" stop-color="#5B2EC9"/>
-    <stop offset="50%" stop-color="#00C2D1"/>
-    <stop offset="100%" stop-color="#00A9B7"/>
-  </linearGradient>
-  <radialGradient id="netNodeGrad">
-    <stop offset="0%" stop-color="#9FF3FF"/>
-    <stop offset="100%" stop-color="#00C2D1"/>
-  </radialGradient>
-</defs>
-<g class="net-edges">
-<line class="net-edge" data-a="0" data-b="2" x1="70" y1="55" x2="420" y2="25"/>
-<line class="net-edge" data-a="0" data-b="3" x1="70" y1="55" x2="420" y2="70"/>
-<line class="net-edge" data-a="0" data-b="4" x1="70" y1="55" x2="420" y2="115"/>
-<line class="net-edge" data-a="0" data-b="5" x1="70" y1="55" x2="420" y2="150"/>
-<line class="net-edge" data-a="1" data-b="2" x1="70" y1="115" x2="420" y2="25"/>
-<line class="net-edge" data-a="1" data-b="3" x1="70" y1="115" x2="420" y2="70"/>
-<line class="net-edge" data-a="1" data-b="4" x1="70" y1="115" x2="420" y2="115"/>
-<line class="net-edge" data-a="1" data-b="5" x1="70" y1="115" x2="420" y2="150"/>
-<line class="net-edge" data-a="2" data-b="6" x1="420" y1="25" x2="760" y2="25"/>
-<line class="net-edge" data-a="2" data-b="7" x1="420" y1="25" x2="760" y2="70"/>
-<line class="net-edge" data-a="2" data-b="8" x1="420" y1="25" x2="760" y2="115"/>
-<line class="net-edge" data-a="2" data-b="9" x1="420" y1="25" x2="760" y2="150"/>
-<line class="net-edge" data-a="3" data-b="6" x1="420" y1="70" x2="760" y2="25"/>
-<line class="net-edge" data-a="3" data-b="7" x1="420" y1="70" x2="760" y2="70"/>
-<line class="net-edge" data-a="3" data-b="8" x1="420" y1="70" x2="760" y2="115"/>
-<line class="net-edge" data-a="3" data-b="9" x1="420" y1="70" x2="760" y2="150"/>
-<line class="net-edge" data-a="4" data-b="6" x1="420" y1="115" x2="760" y2="25"/>
-<line class="net-edge" data-a="4" data-b="7" x1="420" y1="115" x2="760" y2="70"/>
-<line class="net-edge" data-a="4" data-b="8" x1="420" y1="115" x2="760" y2="115"/>
-<line class="net-edge" data-a="4" data-b="9" x1="420" y1="115" x2="760" y2="150"/>
-<line class="net-edge" data-a="5" data-b="6" x1="420" y1="150" x2="760" y2="25"/>
-<line class="net-edge" data-a="5" data-b="7" x1="420" y1="150" x2="760" y2="70"/>
-<line class="net-edge" data-a="5" data-b="8" x1="420" y1="150" x2="760" y2="115"/>
-<line class="net-edge" data-a="5" data-b="9" x1="420" y1="150" x2="760" y2="150"/>
-<line class="net-edge" data-a="6" data-b="10" x1="760" y1="25" x2="1090" y2="85"/>
-<line class="net-edge" data-a="7" data-b="10" x1="760" y1="70" x2="1090" y2="85"/>
-<line class="net-edge" data-a="8" data-b="10" x1="760" y1="115" x2="1090" y2="85"/>
-<line class="net-edge" data-a="9" data-b="10" x1="760" y1="150" x2="1090" y2="85"/>
-</g>
-<g class="net-pulses">
-<circle class="net-pulse-dot" r="3"><animateMotion dur="2.2s" begin="0.0s" repeatCount="indefinite" path="M420,25 L760,115"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="2.2s" begin="0.0s" repeatCount="indefinite"/></circle>
-<circle class="net-pulse-dot" r="3"><animateMotion dur="2.7s" begin="0.35s" repeatCount="indefinite" path="M70,115 L420,25"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="2.7s" begin="0.35s" repeatCount="indefinite"/></circle>
-<circle class="net-pulse-dot" r="3"><animateMotion dur="3.2s" begin="0.7s" repeatCount="indefinite" path="M420,70 L760,25"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="3.2s" begin="0.7s" repeatCount="indefinite"/></circle>
-<circle class="net-pulse-dot" r="3"><animateMotion dur="3.7s" begin="1.0499999999999998s" repeatCount="indefinite" path="M420,150 L760,25"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="3.7s" begin="1.0499999999999998s" repeatCount="indefinite"/></circle>
-<circle class="net-pulse-dot" r="3"><animateMotion dur="2.2s" begin="1.4s" repeatCount="indefinite" path="M70,55 L420,70"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="2.2s" begin="1.4s" repeatCount="indefinite"/></circle>
-<circle class="net-pulse-dot" r="3"><animateMotion dur="2.7s" begin="1.75s" repeatCount="indefinite" path="M70,55 L420,115"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="2.7s" begin="1.75s" repeatCount="indefinite"/></circle>
-<circle class="net-pulse-dot" r="3"><animateMotion dur="3.2s" begin="2.0999999999999996s" repeatCount="indefinite" path="M420,115 L760,70"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="3.2s" begin="2.0999999999999996s" repeatCount="indefinite"/></circle>
-</g>
-<g class="net-nodes">
-<circle class="net-node net-node-io" data-id="0" cx="70" cy="55" r="7" style="animation-delay:0.0s"/>
-<circle class="net-node net-node-io" data-id="1" cx="70" cy="115" r="7" style="animation-delay:0.4s"/>
-<circle class="net-node" data-id="2" cx="420" cy="25" r="5" style="animation-delay:0.8s"/>
-<circle class="net-node" data-id="3" cx="420" cy="70" r="5" style="animation-delay:1.2000000000000002s"/>
-<circle class="net-node" data-id="4" cx="420" cy="115" r="5" style="animation-delay:1.6s"/>
-<circle class="net-node" data-id="5" cx="420" cy="150" r="5" style="animation-delay:0.0s"/>
-<circle class="net-node" data-id="6" cx="760" cy="25" r="5" style="animation-delay:0.4s"/>
-<circle class="net-node" data-id="7" cx="760" cy="70" r="5" style="animation-delay:0.8s"/>
-<circle class="net-node" data-id="8" cx="760" cy="115" r="5" style="animation-delay:1.2000000000000002s"/>
-<circle class="net-node" data-id="9" cx="760" cy="150" r="5" style="animation-delay:1.6s"/>
-<circle class="net-node net-node-io" data-id="10" cx="1090" cy="85" r="7" style="animation-delay:0.0s"/>
-</g>
+<svg class="network-svg" viewBox="0 0 1160 230" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="netLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5B2EC9"/>
+      <stop offset="50%" stop-color="#00C2D1"/>
+      <stop offset="100%" stop-color="#00A9B7"/>
+    </linearGradient>
+    <radialGradient id="netNodeGrad">
+      <stop offset="0%" stop-color="#9FF3FF"/>
+      <stop offset="100%" stop-color="#00C2D1"/>
+    </radialGradient>
+    <radialGradient id="netCoreGrad">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="45%" stop-color="#9FF3FF"/>
+      <stop offset="100%" stop-color="#5B2EC9"/>
+    </radialGradient>
+    <filter id="netGlow" x="-150%" y="-150%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- stage labels above the graphic -->
+  <g font-family="monospace" font-size="10" fill="#6B6785" letter-spacing="1">
+    <text x="70" y="18" text-anchor="middle">INTAKE</text>
+    <text x="420" y="18" text-anchor="middle">ANALYZE</text>
+    <text x="580" y="18" text-anchor="middle">AI CORE</text>
+    <text x="760" y="18" text-anchor="middle">VALIDATE</text>
+    <text x="1090" y="18" text-anchor="middle">DELIVER</text>
+  </g>
+
+  <!-- edges: input -> hidden1 -->
+  <g class="net-edges">
+    <line class="net-edge" data-a="i0" data-b="h0" x1="70" y1="80" x2="420" y2="40"/>
+    <line class="net-edge" data-a="i0" data-b="h1" x1="70" y1="80" x2="420" y2="90"/>
+    <line class="net-edge" data-a="i0" data-b="h2" x1="70" y1="80" x2="420" y2="140"/>
+    <line class="net-edge" data-a="i0" data-b="h3" x1="70" y1="80" x2="420" y2="190"/>
+    <line class="net-edge" data-a="i1" data-b="h0" x1="70" y1="160" x2="420" y2="40"/>
+    <line class="net-edge" data-a="i1" data-b="h1" x1="70" y1="160" x2="420" y2="90"/>
+    <line class="net-edge" data-a="i1" data-b="h2" x1="70" y1="160" x2="420" y2="140"/>
+    <line class="net-edge" data-a="i1" data-b="h3" x1="70" y1="160" x2="420" y2="190"/>
+
+    <!-- hidden1 -> core -->
+    <line class="net-edge" data-a="h0" data-b="core" x1="420" y1="40" x2="580" y2="115"/>
+    <line class="net-edge" data-a="h1" data-b="core" x1="420" y1="90" x2="580" y2="115"/>
+    <line class="net-edge" data-a="h2" data-b="core" x1="420" y1="140" x2="580" y2="115"/>
+    <line class="net-edge" data-a="h3" data-b="core" x1="420" y1="190" x2="580" y2="115"/>
+
+    <!-- core -> hidden2 -->
+    <line class="net-edge" data-a="core" data-b="g0" x1="580" y1="115" x2="760" y2="40"/>
+    <line class="net-edge" data-a="core" data-b="g1" x1="580" y1="115" x2="760" y2="90"/>
+    <line class="net-edge" data-a="core" data-b="g2" x1="580" y1="115" x2="760" y2="140"/>
+    <line class="net-edge" data-a="core" data-b="g3" x1="580" y1="115" x2="760" y2="190"/>
+
+    <!-- hidden2 -> output -->
+    <line class="net-edge" data-a="g0" data-b="o0" x1="760" y1="40" x2="1090" y2="115"/>
+    <line class="net-edge" data-a="g1" data-b="o0" x1="760" y1="90" x2="1090" y2="115"/>
+    <line class="net-edge" data-a="g2" data-b="o0" x1="760" y1="140" x2="1090" y2="115"/>
+    <line class="net-edge" data-a="g3" data-b="o0" x1="760" y1="190" x2="1090" y2="115"/>
+  </g>
+
+  <!-- orbit rings around AI core -->
+  <circle cx="580" cy="115" r="26" fill="none" stroke="#00C2D1" stroke-width="1" opacity="0.4"/>
+  <circle cx="580" cy="115" r="36" fill="none" stroke="#5B2EC9" stroke-width="1" opacity="0.25"/>
+  <circle cx="580" cy="115" r="36" fill="none" stroke="#00C2D1" stroke-width="1.5" opacity="0.5" stroke-dasharray="4 10">
+    <animateTransform attributeName="transform" type="rotate" from="0 580 115" to="360 580 115" dur="9s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- traveling pulses -->
+  <g class="net-pulses">
+    <circle class="net-pulse-dot" r="3.5"><animateMotion dur="2.4s" begin="0s" repeatCount="indefinite" path="M70,80 L420,40"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle class="net-pulse-dot" r="3.5"><animateMotion dur="2.1s" begin="0.4s" repeatCount="indefinite" path="M70,160 L420,140"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="2.1s" repeatCount="indefinite"/></circle>
+    <circle class="net-pulse-dot" r="4"><animateMotion dur="1.6s" begin="0.9s" repeatCount="indefinite" path="M420,90 L580,115"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="1.6s" repeatCount="indefinite"/></circle>
+    <circle class="net-pulse-dot" r="4"><animateMotion dur="1.6s" begin="1.3s" repeatCount="indefinite" path="M580,115 L760,90"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="1.6s" repeatCount="indefinite"/></circle>
+    <circle class="net-pulse-dot" r="3.5"><animateMotion dur="2.2s" begin="1.7s" repeatCount="indefinite" path="M760,140 L1090,115"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="2.2s" repeatCount="indefinite"/></circle>
+    <circle class="net-pulse-dot" r="3.5"><animateMotion dur="2.3s" begin="2.1s" repeatCount="indefinite" path="M760,40 L1090,115"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="2.3s" repeatCount="indefinite"/></circle>
+    <circle class="net-pulse-dot" r="3"><animateMotion dur="2.5s" begin="0.2s" repeatCount="indefinite" path="M420,190 L580,115"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.85;1" dur="2.5s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- nodes -->
+  <g class="net-nodes">
+    <circle class="net-node net-node-io" data-id="i0" cx="70" cy="80" r="8"/>
+    <circle class="net-node net-node-io" data-id="i1" cx="70" cy="160" r="8"/>
+
+    <circle class="net-node" data-id="h0" cx="420" cy="40" r="5"/>
+    <circle class="net-node" data-id="h1" cx="420" cy="90" r="5"/>
+    <circle class="net-node" data-id="h2" cx="420" cy="140" r="5"/>
+    <circle class="net-node" data-id="h3" cx="420" cy="190" r="5"/>
+
+    <circle class="net-node" data-id="g0" cx="760" cy="40" r="5"/>
+    <circle class="net-node" data-id="g1" cx="760" cy="90" r="5"/>
+    <circle class="net-node" data-id="g2" cx="760" cy="140" r="5"/>
+    <circle class="net-node" data-id="g3" cx="760" cy="190" r="5"/>
+
+    <circle class="net-node net-node-io" data-id="o0" cx="1090" cy="115" r="9"/>
+  </g>
+
+  <!-- AI core, drawn last so it's on top and biggest -->
+  <circle cx="580" cy="115" r="15" fill="url(#netCoreGrad)" filter="url(#netGlow)">
+    <animate attributeName="r" values="14;17;14" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+  <path d="M 573 115 L 578 120 L 588 108" stroke="#1B1035" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

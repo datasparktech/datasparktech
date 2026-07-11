@@ -395,12 +395,21 @@ nav{
 
 /* ---------- Stats bar ---------- */
 .stats-bar{
-  background:var(--ink);
+  background-image:
+    radial-gradient(500px 260px at 15% 0%, rgba(91,46,201,.35), transparent 60%),
+    radial-gradient(500px 260px at 85% 100%, rgba(0,194,209,.25), transparent 60%),
+    radial-gradient(circle, rgba(159,243,255,.15) 1px, transparent 1.5px);
+  background-color:var(--ink);
+  background-size:auto, auto, 26px 26px;
   padding:56px 0;
+  position:relative;
+  overflow:hidden;
 }
 .stats-bar .wrap{
   display:grid;
   grid-template-columns:repeat(4, 1fr);
+  position:relative;
+  z-index:1;
   gap:32px;
 }
 .stat-block{ text-align:left; }
